@@ -1,0 +1,6 @@
+{
+  "name": "ECFL — Living Scope Health Ocean Dive",
+  "description": "ECFL tournament landing page with interactive 3D WebGL ocean scuba diver scroll animation and bioluminescent deep-sea environment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

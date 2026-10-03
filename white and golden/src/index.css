@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --surface-card: rgba(255, 255, 255, 0.92);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(179, 130, 34, 0.4);
+  --text-main: #09090b;
+  --text-muted: #52525b;
+  --brass: #b38222;
+  --brass-light: #c8952d;
+  --brass-dim: rgba(179, 130, 34, 0.12);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: #fbfbfa;
+  color: #09090b;
+  overflow-x: hidden;
+  letter-spacing: -0.01em;
+}
+
+/* Minimal Bright Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fbfbfa;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Luminous Minimal Surface */
+.surface-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.surface-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.surface-card-hover:hover {
+  border-color: rgba(179, 130, 34, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.08), 0 0 20px -4px rgba(179, 130, 34, 0.08);
+}
+
+/* Luminous Navigation */
+.nav-blur {
+  background: rgba(251, 251, 250, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+/* Rich Brass Accent Button */
+.btn-brass,
+.btn-gold {
+  background-color: #b38222;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-brass:hover,
+.btn-gold:hover {
+  background-color: #9c6f19;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(179, 130, 34, 0.25);
+}
+.btn-brass:active,
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+/* Bright Minimal Editorial Secondary Button */
+.btn-editorial,
+.btn-secondary {
+  background: #ffffff;
+  color: #18181b;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-weight: 500;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-editorial:hover,
+.btn-secondary:hover {
+  background: #f4f4f5;
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #09090b;
+}
+
+/* Bright Primary Button */
+.btn-primary {
+  background: #b38222;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-primary:hover {
+  background: #9c6f19;
+}
+
+/* Subtle Brass Text Gradient */
+.text-gold-gradient,
+.text-brass-gradient {
+  background: linear-gradient(135deg, #18181b 30%, #b38222 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Luminous Shadow */
+.editorial-glow {
+  box-shadow: 0 0 40px -10px rgba(179, 130, 34, 0.08);
+}
